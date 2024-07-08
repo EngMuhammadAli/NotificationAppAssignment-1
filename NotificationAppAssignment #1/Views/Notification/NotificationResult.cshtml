@@ -1,0 +1,19 @@
+﻿@model List<NotificationAppAssignment__1.Models.Notification>
+
+@{
+    ViewData["Title"] = "Notification Result";
+}
+
+<h2>Notification Result</h2>
+
+<ul>
+    @foreach (var notification in Model)
+    {
+        <li>
+            <strong>Provider:</strong> @notification.Provider<br />
+            <strong>Recipient:</strong> @notification.Recipient<br />
+            <strong>Message:</strong> @notification.Message<br />
+            <strong>Timestamp:</strong> @notification.Timestamp<br />
+        </li>
+    }
+</ul>
